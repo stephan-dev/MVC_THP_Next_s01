@@ -25,11 +25,11 @@ RSpec.describe Item, type: :model do
     end
   end
 
-  # describe 'Price' do
-  #   context 'when the item has a discount' do
-  #     let(:item) { build(:item_with_discount, original_price: 100.00, discount_percentage: 20) }
+  describe 'Price' do
+    context 'when the item has a discount' do
+      let(:item) { build(:item_with_discount, original_price: 100.00, discount_percentage: 20) }
 
-  #     it { expect(item.price).to eq(80.00) }
-  #   end
-  # end
+      it { expect(item.price).to eq(80.00) }
+    end
+  end
 end
