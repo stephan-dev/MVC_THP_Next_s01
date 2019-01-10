@@ -20,4 +20,10 @@ class Item < ApplicationRecord
       original_price
     end
   end
+
+  def self.average_price
+  	sum = 0
+    self.all.map{|item| sum += item.price}
+    sum / self.count
+  end
 end
