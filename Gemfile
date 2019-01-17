@@ -22,6 +22,7 @@ gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 gem 'devise'
 gem 'rails_db', '2.0.4'
+gem 'sidekiq'
 
 group :development, :test do
   gem 'factory_bot_rails', '~> 4.0'
