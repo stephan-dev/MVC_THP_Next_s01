@@ -3,9 +3,9 @@
 require 'rails_helper'
 
 RSpec.describe HomeController, type: :controller do
-  describe "GET #landing_page" do
+  describe "GET #home" do
     it "returns http success" do
-      get :landing_page
+      get :index
       expect(response).to have_http_status(:success)
     end
   end
