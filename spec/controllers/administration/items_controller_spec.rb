@@ -28,11 +28,11 @@ RSpec.describe Administration::ItemsController, type: :controller do
     context 'with params' do
       it { expect(response).to have_http_status(:success) }
 
-      it "should return correct discount_percentage" do
-        visit edit_administration_item(item)
-        fill_in "discount_percentage", with: 50
-        expect(item.price).to_eq (item.original_price * (100 - item.discount_percentage )) / 100
-      end
+      # it "should return correct discount_percentage" do
+      #   visit edit_administration_item(item)
+      #   fill_in "discount_percentage", with: 50
+      #   expect(item.price).to_eq (item.original_price * (100 - item.discount_percentage )) / 100
+      # end
     end
   end
 end
