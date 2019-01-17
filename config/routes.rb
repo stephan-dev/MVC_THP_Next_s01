@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'administration/items#index'
 
-  get '/home', to: 'home#landing_page'
+  get '/home', to: 'home#index'
 
   namespace 'administration' do
     get '/', to: 'items#index'
