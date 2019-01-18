@@ -2,6 +2,8 @@
 <% @users.each do |user| %>
 	<%= user.email %> <br>
 	<a href="#">lui envoyer un mailing</a>
-	<%= button_to 'lui envoyer un mailing', administration_users_sendpromo_path %>
+	<%= button_to 'lui envoyer un mailing', administration_users_sendpromo_path(user) %>
+	<br>
+	<%= administration_users_sendpromo_path(user) %>
 	<br><br>
 <% end %>

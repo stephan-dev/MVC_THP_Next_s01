@@ -7,5 +7,6 @@ class Administration::UsersController < AdministrationController
   end
 
   def sendpromo
+    User.find(params[:format]).sendthepromo
   end
 end
